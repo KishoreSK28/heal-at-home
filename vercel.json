@@ -1,5 +1,8 @@
 {
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    {
+      "source": "/((?!manifest.json|flutter.js|flutter_bootstrap.js|flutter_service_worker.js|main.dart.js|assets|icons|canvaskit).*)",
+      "destination": "/index.html"
+    }
   ]
 }
